@@ -54,9 +54,11 @@
 </p>
     <h2 class = "body-text">Data Gathering</h2>
     <p class = "body-text">The first step in this process is to gather the data that will be used in our algorithm. For this tutorial, we are using a dataset from Kaggle, as it contains a list of data for the top 109 TV shows from the Hulu streaming service. This dataset contains the plot summaries and genres of each TV show, and will work perfectly to demonstrate our classification algorithm. The dataset is in csv format and after downloading the file from Kaggle, we can load it into a pandas dataframe for later manipulation and analysis of the data. 
-	Download the dataset here: </p>
-	<a href="TV Show Dataset">https://www.kaggle.com/datasets/thedevastator/hulu-popular-shows-dataset</a>
+	<br>Download the dataset here: </p>
+	  <div class="body-text">
+	<a href="https://www.kaggle.com/datasets/thedevastator/hulu-popular-shows-dataset">TV Show Dataset</a>
 	  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FMiaSimp%2Fclassifier%2Fblob%2Fmain%2Fproject3.py%23L85-L86&style=base16%2Focean&type=code&showFullPath=on"></script>
+	</div>
 	<p class = "body-text">While we did not require web scraping to acquire our dataset, this technique of data gathering is instrumental in the data science field for fetching information from online resources. Web scraping involves the automated extraction of unstructured data from web pages and storing them in an structured format. Web scraping software retrieves the HTML code of a website and parses through it to gather data that fits predetermined parameters. Once the data is found, the web scraper downloads and structures the data so that you may use it for later analysis. Web scraping enables access to diverse data sets, and in similar projects, it could look like scraping various TV show related websites to compile extensive data on even more shows than are represented in our dataset. 
 	 </p>
     <h2 class = "body-text">Data Ethics</h2>
@@ -70,8 +72,10 @@
 
 <br><br>For data preparation, we convert the dataset from its raw, messy form into a higher quality, more usable format. Some transformations that may be needed are standardizing formats and handling missing, irrelevant, unnecessary, and inconsistent data. For many data science projects, the data will come with inconsistencies that require cleaning to be later analyzed with any sort of accuracy. For example, in our case, the dataset came with 1000 entries, but there were only 109 unique entries. This means that we need to clean the data of duplicate entries. This plays an important role in ensuring the integrity of the dataset and preventing skewed results.  Furthermore, to focus on only the core elements necessary for our analysis, we can reduce the columns in our dataset. Given the objective of the classification algorithm, we can isolate just the show name, description, and genre columns. This filtering of the dataset to only include specific attributes streamlines our analysis process, while discarding unnecessary information that did not contribute to our model. Here we can see how to isolate the necessary columns and drop the duplicates. 
 	</p>
-	  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FMiaSimp%2Fclassifier%2Fblob%2Fmain%2Fproject3.py%23L88-L95&style=base16%2Focean&type=code&showFullPath=on"></script>
 	  <div class="body-text">
+	  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FMiaSimp%2Fclassifier%2Fblob%2Fmain%2Fproject3.py%23L88-L95&style=base16%2Focean&type=code&showFullPath=on"></script>
+	  </div>
+		  <div class="body-text">
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FMiaSimp%2Fclassifier%2Fblob%2Fmain%2Fproject3.py%23L1-L13&style=base16%2Focean&type=code&showFullPath=on"></script> 
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FMiaSimp%2Fclassifier%2Fblob%2Fmain%2Fproject3.py%23L16-L57&style=base16%2Focean&type=code&showFullPath=on"></script>
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FMiaSimp%2Fclassifier%2Fblob%2Fmain%2Fproject3.py%23L282&style=base16%2Focean&type=code&showFullPath=on"></script>		  
