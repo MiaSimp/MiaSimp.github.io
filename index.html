@@ -53,39 +53,7 @@
     <h2 class = "body-text">Data Gathering</h2>
     <h2 class = "body-text">Data Ethics</h2>
     <h2 class = "body-text">Munging, Wrangling, and Cleaning Data</h2>
-    <pre>
-      	<code>
-# read the dataset from the CSV file into a dataframe
-newDF = pd.read_csv('HuluRaw.csv')
-
-# select the necessary columns from the dataset
-newDF = newDF[['show/canonical_name', 'show/description', 'show/genre']].copy()
-# drop duplicate columns and reset indexes
-newDF = newDF.drop_duplicates('show/canonical_name', keep='last', ignore_index =True)
-#newDF.reset_index()
-
-# rename columns
-newDF.columns = ['Show Name', 'Description', 'Genre']
-
-# separate out the training (80%) and testing (20%) data
-# calculate 20% of the dataset
-twenPerc = int(len(newDF.index) * 0.2)
-
-# calculate 80% of the dataset
-eightyPerc = len(newDF.index) - twenPerc
-
-# create a new dataframe with the first 20% of the data
-testData = newDF.head(twenPerc)
-
-# create a new dataframe with the last 80% of the data
-trainData = newDF.tail(eightyPerc)
-
-print(testData)
-print(trainData)
-#reset the indexes of the testing dataset
-trainData.reset_index(drop=True, inplace=True)
-      </code>
-    </pre>
+	<pre><code src="https://github.com/MiaSimp/tutorial.py#L1-L13"></code></pre>
     <h2 class = "body-text">Analysis</h2>
     
   </div>
