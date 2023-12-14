@@ -45,14 +45,14 @@
   <div class="container">
     <h1 class="title">Predicting the Genres of Hulu TV Shows</h1>
     <p class="name">Mia Simpson</p>
-    <h2 class = "body-text">Introduction</h2>
+    <h2>Introduction</h2>
     <p class = "body-text"> This tutorial utilizes the Machine Learning algorithm of Multinomial Naive Bayes to predict TV show genres based on titles and plot summaries. The Multinomial Naive Bayes algorithm is seen mostly in Natural Language Processing and uses the Bayes’ theorem to predict the category of a text. 
 	    The classifier operates by calculating the probability of an object belonging to a certain category based on the probabilities of its features occurring in that category, assuming that the features of the data are independent of each other. The category with the highest calculated probability is then selected as 
 	    the predicted classification for your given object. <br><br>
 	    In this tutorial, we will be predicting the genre of a TV show based on the text in its title and description. TV show genres are typically manually tagged, which can be a tedious process when taking into account how many shows exist on platforms such as Hulu. Since summaries and titles hold integral information about their shows, 
 	    I employed this Machine Learning algorithm to quickly classify TV show genres given their title and description. 
 </p>
-    <h2 class = "body-text">Data Gathering</h2>
+    <h2>Data Gathering</h2>
 	<p class = "body-text">Before we get into the steps of creating and testing our classification model, we must import all of the libraries that we will use throughout the program. </p>
 	  <div class="body-text"> 
 	  <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FMiaSimp%2Fclassifier%2Fblob%2Fmain%2Fproject3.py%23L1-L9&style=base16%2Focean&type=code&showFullPath=on"></script> 
@@ -66,12 +66,12 @@
 	</div>
 	<p class = "body-text">While we did not require web scraping to acquire our dataset, this technique of data gathering is instrumental in the data science field for fetching information from online resources. Web scraping involves the automated extraction of unstructured data from web pages and storing them in an structured format. Web scraping software retrieves the HTML code of a website and parses through it to gather data that fits predetermined parameters. Once the data is found, the web scraper downloads and structures the data so that you may use it for later analysis. Web scraping enables access to diverse data sets, and in similar projects, it could look like scraping various TV show related websites to compile extensive data on even more shows than are represented in our dataset. 
 	 </p>
-    <h2 class = "body-text">Data Ethics</h2>
+    <h2>Data Ethics</h2>
     	<p class = "body-text"> Now that we have gathered our data, we can touch on data ethics. Ethical data collection is integral in any project that involves data analysis. Data ethics refers to collecting and analyzing data in moral and responsible ways. Whether intentional or unintentional, poorly collected data can be used to perpetuate biases or misinterpreted the reality of a situation. It is necessary to ensure that your data is gathered ethically to protect the personally identifiable data of individuals, avoid implicit bias, and ensure that the data is true and trustworthy. Upon collecting your data, you should consider the potential societal implications and privacy concerns related to it. Machine learning algorithms, including the one we are using here, have the potential to benefit the efficiency, consistency, speed, and cost of jobs, if implemented properly and ethically, so approaching them with good intentions is very important. When not approached ethically, data collection can introduce inaccuracies and skewed perspectives into your machine learning algorithm due to bias, measurement error, and/or incomplete samples. This may reinforce or even amplify biases within the models and analyses you create. To address these issues by modeling proper data ethics in your programs is vital in ensuring its fair and correct results.
 <br><br>When we collect our data we need to ensure that the data is collected legally by checking the terms of service and ensuring that you do not need to make an account to access the website. If you need to login to access the data, or the terms of service of the site state that web scraping is not allowed, you cannot collect data from that site. You should also make sure that you do not violate copyright laws or the Computer Fraud and Abuse Act with your use of the data. Furthermore, if you are web scraping and negatively impact someone’s website with the intent to harm, you are trespassing to chattel, which is another unethical method of data gathering and use. 
 <br><br>Both the gathering and use of data can be unethical, whether intentional or unintentional, so it is imperative to keep data ethics in mind to ensure the proper usage of data. 
 </p>
-    <h2 class = "body-text">Munging, Wrangling, and Cleaning Data</h2>
+    <h2>Munging, Wrangling, and Cleaning Data</h2>
 
 	<p class = "body-text"> The next step in our process is to transform and clean our data to be analyzed. This involves data munging, wrangling, and cleaning. While our dataset did not need extensive cleaning or transforming, the data preparation stage is still pivotal in data science, taking up 80% or more of an analyst’s time. 
 
